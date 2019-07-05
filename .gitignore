@@ -120,4 +120,4 @@ tf_to_pytorch/pretrained_tensorflow
 examples/imagenet/run.sh
 
 
-
+data

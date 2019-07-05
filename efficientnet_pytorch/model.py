@@ -2,6 +2,8 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
+import pdb
+
 from .utils import (
     relu_fn,
     round_filters,
@@ -168,7 +170,6 @@ class EfficientNet(nn.Module):
 
         # Head
         x = relu_fn(self._bn1(self._conv_head(x)))
-
         return x
 
     def forward(self, inputs):
